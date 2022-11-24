@@ -5,6 +5,8 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SessionsController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\IndexController;
+
 
 
 
@@ -20,10 +22,10 @@ use App\Http\Controllers\ProductController;
 */
 
 Route::get('/', function () {
-    return view('inicio');
+    return view('index');
 })->middleware('auth');
 
-Route::get('/inicio', function () {
+Route::get('/', function () {
     return view('index');
 });
 
